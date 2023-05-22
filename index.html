@@ -6,20 +6,106 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#FCF7E6] text-[14px] font-['Space_Grotesk'] not-italic">
-    <div class="header border-b border-black">
+    <header class="border-b border-black">
         <div class="container mx-auto flex justify-between py-[48px]">
             <div class="header_logo">
                 <img class="h-[98px]" src="./images/logo.svg" alt="">
             </div>
 
             <div class="header_info">
-                <a class="font-semibold mr-[48px]" href="#">About us</a>
-                <button type="button" class="p-[12px] bg-black text-white font-bold rounded-[4px]">
+                <a class="font-semibold mr-[48px] text-[20px]" href="#">About us</a>
+                <button type="button" class="p-[12px] text-[20px] bg-black text-white font-bold rounded-[4px]">
                     Sign-up
                 </button>
             </div>
 
         </div>
-    </div>
+    </header>
+
+    <main class="border-b border-black">
+        <div class="container mx-auto">
+            <div class="important_info bg-black my-[100px] p-[26px] text-white flex justify-between">
+                <div class="flex">
+                    <div class="flex">
+                        <img src="./images/alert.svg" alt="">
+                        <div class="uppercase font-bold text-[16px] mx-[8px]">alert</div>
+                    </div>
+
+                    <div class="font-medium ml-[48px]">
+                        Important info regarding our service
+                    </div>
+                </div>
+
+                <img src="./images/chevron-down.svg" alt="">
+            </div>
+
+            <div class="main_products">
+
+            </div>
+
+            <div class="main_form flex flex-col items-center my-[140px]">
+                <div class="text-[20px] font-normal">
+                    Be the first one to know when we launch our beta!
+                </div>
+                <form action="" class="mt-[24px]">
+                    <input class="mr-[12px] text-[16px] p-4 w-[520px]" type="text" placeholder="E-mail">
+                    <button class="text-[16px] p-4 bg-[#ED5E21] rounded-[4px]" type="submit">Sign-up</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white py-[64px]">
+        <div class="container mx-auto flex justify-around font-bold">
+            <div>
+                <img src="./images/Logomark.svg" alt="">
+            </div>
+            <div>
+                <ul>
+                    <li class="mb-[8px]">
+                        <a href="">FAQ</a>
+                    </li>
+                    <li class="mb-[8px]">
+                        <a href="">RETURNS</a>
+                    </li>
+                    <li class="mb-[8px]">
+                        <a href="">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="mb-[8px]">
+                        <a href="">TERMS & CONDITIONS</a>
+                    </li>
+                    <li class="mb-[8px]">
+                        <a href="">PRIVACY POLICY</a>
+                    </li>
+                    <li class="mb-[8px]">
+                        <a href="">COOKIE POLICY</a>
+                    </li>
+                    <li class="mb-[8px]">
+                        <a href="">COOKIE SETTINGS</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="mb-[8px]">
+                        <a href="">ABOUT SECOND CHANCE</a>
+                    </li>
+                    <li class="mb-[8px]">
+                        <a href="">CAREER</a>
+                    </li>
+                    <li class="mb-[8px]">
+                        <a href="">FACEBOOK</a>
+                    </li>
+                    <li class="mb-[8px]">
+                        <a href="">INSTAGRAM</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
