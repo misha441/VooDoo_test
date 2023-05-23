@@ -13,14 +13,14 @@
 </head>
 <body class="bg-[#FCF7E6] text-[14px] font-['Space_Grotesk'] not-italic">
     <header class="border-b border-black">
-        <div class="container mx-auto flex justify-between py-[48px]">
+        <div class="container mx-auto flex justify-between py-[48px] px-4">
             <div class="header_logo">
-                <img class="h-[98px]" src="./images/logo.svg" alt="">
+                <img class="h-[98px] max-[550px]:h-[48px]" src="./images/logo.svg" alt="">
             </div>
 
             <div class="header_info">
-                <a class="font-semibold mr-[48px] text-[20px]" href="#">About us</a>
-                <button type="button" class="p-[12px] text-[20px] bg-black text-white font-bold rounded-[4px] hover:bg-[#343434]">
+                <a class="font-semibold mr-[48px] text-[20px] max-[550px]:text-[14px] max-[550px]:mr-[16px]" href="#">About us</a>
+                <button type="button" class="p-[12px] text-[20px] bg-black text-white font-bold rounded-[4px] hover:bg-[#343434] max-[550px]:text-[14px]">
                     Sign-up
                 </button>
             </div>
@@ -29,7 +29,7 @@
     </header>
 
     <main class="border-b border-black">
-        <div class="container mx-auto">
+        <div class="container mx-auto px-4">
             <div class="important_info my-[100px] text-white">
                 <div id="alpha_button" class="bg-black p-[26px] flex justify-between hover:bg-[#343434]  cursor-pointer">
                     <div class="flex">
@@ -39,7 +39,8 @@
                         </div>
 
                         <div class="font-medium ml-[48px]">
-                            Important info regarding our service
+                            <p class="max-[550px]:hidden">Important info regarding our service</p>
+                            <p class="min-[550px]:hidden">Important info</p>
                         </div>
                     </div>
 
@@ -51,7 +52,7 @@
             </div>
 
 
-            <div id="products_field" class="main_products flex justify-between flex-wrap">
+            <div id="products_field" class="main_products flex justify-between flex-wrap max-[649px]:justify-center">
 
 <!--                <div class="product_card w-[300px] mb-[110px]">-->
 <!--                    <div class="rounded-[4px] border border-black w-[300px] h-[300px] relative">-->
@@ -82,24 +83,24 @@
                 
             </div>
 
-            <div class="main_form flex flex-col items-center my-[140px]">
-                <div class="text-[20px] font-normal">
+            <div class="main_form flex flex-col items-center my-[140px] max-[650px]:my-[90px]">
+                <div class=" font-normal text-[20px] max-[650px]:text-[14px]">
                     Be the first one to know when we launch our beta!
                 </div>
-                <form action="" class="mt-[24px]">
-                    <input class="mr-[12px] text-[16px] p-4 w-[520px] font-semibold" type="text" placeholder="E-mail">
-                    <button class="text-[16px] p-4 bg-[#ED5E21] rounded-[4px] font-semibold hover:bg-[#ff8956]" type="submit">Sign-up</button>
+                <form action="" class="mt-[24px] max-[650px]:w-[100%] flex">
+                    <input class="mr-[12px] text-[16px] p-4 w-[520px] font-semibold max-[370px]:text-[11px]" type="text" placeholder="E-mail">
+                    <button class="text-[16px] p-4 bg-[#ED5E21] rounded-[4px] font-semibold min-w-[95px] hover:bg-[#ff8956] max-[370px]:text-[11px]" type="submit">Sign-up</button>
                 </form>
             </div>
         </div>
     </main>
 
     <footer class="bg-white py-[64px]">
-        <div class="container mx-auto flex justify-around font-bold">
-            <div class="max-[1070px]:hidden" >
-                <img src="./images/Logomark.svg" alt="">
-            </div>
+        <div class="container mx-auto px-4 flex justify-around font-bold max-[550px]:block">
             <div>
+                <img class="max-[550px]:hidden" src="./images/Logomark.svg" alt="">
+            </div>
+            <div class="max-[550px]:mt-[48px]">
                 <ul>
                     <li class="mb-[8px]">
                         <a href="">FAQ</a>
@@ -112,7 +113,7 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="max-[550px]:mt-[48px]">
                 <ul>
                     <li class="mb-[8px]">
                         <a href="">TERMS & CONDITIONS</a>
@@ -128,7 +129,7 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="max-[550px]:mt-[48px]">
                 <ul>
                     <li class="mb-[8px]">
                         <a href="">ABOUT SECOND CHANCE</a>
@@ -143,6 +144,9 @@
                         <a href="">INSTAGRAM</a>
                     </li>
                 </ul>
+            </div>
+            <div>
+                <img class="min-[550px]:hidden max-[550px]:pt-[50px] mx-auto" src="./images/Logomark.svg" alt="">
             </div>
         </div>
     </footer>
