@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>VooDoo test</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 <body class="bg-[#FCF7E6] text-[14px] font-['Space_Grotesk'] not-italic">
     <header class="border-b border-black">
@@ -14,7 +20,7 @@
 
             <div class="header_info">
                 <a class="font-semibold mr-[48px] text-[20px]" href="#">About us</a>
-                <button type="button" class="p-[12px] text-[20px] bg-black text-white font-bold rounded-[4px]">
+                <button type="button" class="p-[12px] text-[20px] bg-black text-white font-bold rounded-[4px] hover:bg-[#343434]">
                     Sign-up
                 </button>
             </div>
@@ -24,23 +30,56 @@
 
     <main class="border-b border-black">
         <div class="container mx-auto">
-            <div class="important_info bg-black my-[100px] p-[26px] text-white flex justify-between">
-                <div class="flex">
+            <div class="important_info my-[100px] text-white">
+                <div id="alpha_button" class="bg-black p-[26px] flex justify-between hover:bg-[#343434]  cursor-pointer">
                     <div class="flex">
-                        <img src="./images/alert.svg" alt="">
-                        <div class="uppercase font-bold text-[16px] mx-[8px]">alert</div>
+                        <div class="flex">
+                            <img src="./images/alert.svg" alt="">
+                            <div class="uppercase font-bold text-[16px] mx-[8px]">alpha</div>
+                        </div>
+
+                        <div class="font-medium ml-[48px]">
+                            Important info regarding our service
+                        </div>
                     </div>
 
-                    <div class="font-medium ml-[48px]">
-                        Important info regarding our service
-                    </div>
+                    <img src="./images/chevron-down.svg" alt="">
                 </div>
-
-                <img src="./images/chevron-down.svg" alt="">
+                <div id="alpha_info" class="important_info--info p-[26px] bg-black border-t border-[#999999]">
+                    This is only an alpha version of our service. Submit your email address in the form below to be the first to know about the launch of the beta test
+                </div>
             </div>
 
-            <div class="main_products">
 
+            <div id="products_field" class="main_products flex justify-between flex-wrap">
+
+<!--                <div class="product_card w-[300px] mb-[110px]">-->
+<!--                    <div class="rounded-[4px] border border-black w-[300px] h-[300px] relative">-->
+<!--                        <div class="absolute bg-black text-white rounded-[4px] p-[8px] top-[8px] left-[8px] uppercase">used</div>-->
+<!--                        <img class=""  src="https://cdn.shopify.com/s/files/1/0690/0075/7529/files/offers.png?v=1683108483" alt="">-->
+<!--                    </div>-->
+<!--                    <div class="flex justify-between mt-[12px]">-->
+<!--                        <div class="product_name">-->
+<!--                            <div class="font-bold">-->
+<!--                                Product name-->
+<!--                            </div>-->
+<!--                            <div class="font-bold">-->
+<!--                                fffff-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="product_condition">-->
+<!--                            <div class="font-medium text-right">-->
+<!--                                Condition-->
+<!--                            </div>-->
+<!--                            <div class="font-medium text-right">-->
+<!--                                ddddd-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+                <img class="relative left-1/2 translate-x-[-50%]" src="./images/loading.svg" alt="">
+                
             </div>
 
             <div class="main_form flex flex-col items-center my-[140px]">
@@ -48,8 +87,8 @@
                     Be the first one to know when we launch our beta!
                 </div>
                 <form action="" class="mt-[24px]">
-                    <input class="mr-[12px] text-[16px] p-4 w-[520px]" type="text" placeholder="E-mail">
-                    <button class="text-[16px] p-4 bg-[#ED5E21] rounded-[4px]" type="submit">Sign-up</button>
+                    <input class="mr-[12px] text-[16px] p-4 w-[520px] font-semibold" type="text" placeholder="E-mail">
+                    <button class="text-[16px] p-4 bg-[#ED5E21] rounded-[4px] font-semibold hover:bg-[#ff8956]" type="submit">Sign-up</button>
                 </form>
             </div>
         </div>
@@ -57,7 +96,7 @@
 
     <footer class="bg-white py-[64px]">
         <div class="container mx-auto flex justify-around font-bold">
-            <div>
+            <div class="max-[1070px]:hidden" >
                 <img src="./images/Logomark.svg" alt="">
             </div>
             <div>
@@ -107,5 +146,9 @@
             </div>
         </div>
     </footer>
+
+
+
+    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
