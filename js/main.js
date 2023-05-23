@@ -14,7 +14,7 @@ function createProductsList(products){
 
     products.forEach((product) => {
         const products_card =` 
-            <div class="mb-[60px] w-[300px] max-[370px]:w-[200px]">
+            <div class="mb-[60px] w-[300px] max-[370px]:w-[200px] mx-[1px]">
                 <a href="#" class="product_card w-[300px] max-[370px]:w-[200px]">
                     <div class="rounded-[4px] border border-black w-[300px] h-[300px] relative overflow-hidden max-[370px]:w-[200px] max-[370px]:h-[200px]">
                         <div class="absolute bg-black text-white rounded-[4px] p-[8px] top-[8px] left-[8px] uppercase">used</div>
@@ -39,7 +39,7 @@ function createProductsList(products){
                         </div>
                     </div>
                 </a>
-                <button class="p-[16px] bg-black text-white center w-[100%] font-bold mt-[10px] min-[646px]:hidden">
+                <button class="p-[16px] bg-black text-white center w-[100%] font-bold mt-[10px] min-[655px]:hidden">
                     PICK-UP IN 2200
                 </button>
             </div>
