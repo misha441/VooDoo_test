@@ -12,12 +12,14 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 <body class="bg-[#FCF7E6] text-[14px] font-['Space_Grotesk'] not-italic">
+    <!--    header         -->
     <header class="border-b border-black">
         <div class="container mx-auto flex justify-between py-[48px] px-4">
+            <!--    header logo        -->
             <div class="header_logo">
                 <img class="h-[98px] max-[550px]:h-[48px]" src="./images/logo.svg" alt="">
             </div>
-
+            <!--    header info (About us, Sign-up)        -->
             <div class="header_info">
                 <a class="font-semibold mr-[48px] text-[20px] max-[550px]:text-[14px] max-[550px]:mr-[16px]" href="#">About us</a>
                 <button type="button" class="p-[12px] text-[20px] bg-black text-white font-bold rounded-[4px] hover:bg-[#343434] max-[550px]:text-[14px]">
@@ -28,8 +30,10 @@
         </div>
     </header>
 
+    <!--    main part        -->
     <main class="border-b border-black">
         <div class="container mx-auto px-4">
+            <!--    alert, info about alpha        -->
             <div class="important_info my-[100px] text-white">
                 <div id="alpha_button" class="bg-black p-[26px] flex justify-between hover:bg-[#343434]  cursor-pointer">
                     <div class="flex">
@@ -37,13 +41,11 @@
                             <img src="./images/alert.svg" alt="">
                             <div class="uppercase font-bold text-[16px] mx-[8px]">alpha</div>
                         </div>
-
                         <div class="font-medium ml-[48px]">
                             <p class="max-[550px]:hidden">Important info regarding our service</p>
                             <p class="min-[550px]:hidden">Important info</p>
                         </div>
                     </div>
-
                     <img src="./images/chevron-down.svg" alt="">
                 </div>
                 <div id="alpha_info" class="important_info--info p-[26px] bg-black border-t border-[#999999]">
@@ -51,38 +53,13 @@
                 </div>
             </div>
 
-
+            <!--    place for cards with products        -->
             <div id="products_field" class="main_products flex justify-between flex-wrap max-[657px]:justify-center">
-
-<!--                <div class="product_card w-[300px] mb-[110px]">-->
-<!--                    <div class="rounded-[4px] border border-black w-[300px] h-[300px] relative">-->
-<!--                        <div class="absolute bg-black text-white rounded-[4px] p-[8px] top-[8px] left-[8px] uppercase">used</div>-->
-<!--                        <img class=""  src="https://cdn.shopify.com/s/files/1/0690/0075/7529/files/offers.png?v=1683108483" alt="">-->
-<!--                    </div>-->
-<!--                    <div class="flex justify-between mt-[12px]">-->
-<!--                        <div class="product_name">-->
-<!--                            <div class="font-bold">-->
-<!--                                Product name-->
-<!--                            </div>-->
-<!--                            <div class="font-bold">-->
-<!--                                fffff-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="product_condition">-->
-<!--                            <div class="font-medium text-right">-->
-<!--                                Condition-->
-<!--                            </div>-->
-<!--                            <div class="font-medium text-right">-->
-<!--                                ddddd-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-
+                <!--    cards with products are inserted here by the id of the parent element!!!!!!        -->
                 <img class="relative left-1/2 translate-x-[-50%]" src="./images/loading.svg" alt="">
-                
             </div>
 
+            <!--    form for beta info       -->
             <div class="main_form flex flex-col items-center my-[140px] max-[650px]:my-[90px]">
                 <div class=" font-normal text-[20px] max-[650px]:text-[14px]">
                     Be the first one to know when we launch our beta!
@@ -95,8 +72,10 @@
         </div>
     </main>
 
+    <!--    footer info       -->
     <footer class="bg-white py-[64px]">
         <div class="container mx-auto px-4 flex justify-around font-bold max-[550px]:block">
+            <!--    footer logo when screen is more than 550px       -->
             <div>
                 <img class="max-[550px]:hidden" src="./images/Logomark.svg" alt="">
             </div>
@@ -145,6 +124,7 @@
                     </li>
                 </ul>
             </div>
+            <!--    footer logo when screen is less than 550px       -->
             <div>
                 <img class="min-[550px]:hidden max-[550px]:pt-[50px] mx-auto" src="./images/Logomark.svg" alt="">
             </div>
